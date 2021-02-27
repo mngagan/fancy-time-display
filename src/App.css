@@ -1,0 +1,131 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  /* min-height: 100vh; */
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.center-align {
+  /* background-color: #282c34; */
+  /* min-height: 100%; */
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  /* color: white; */
+}
+
+div {
+  color: white;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.each-box {
+
+  padding: 17px;
+}
+
+.anim04 {
+  transition: all 0.4s;
+  position: absolute;
+}
+
+.bar-outer {
+  /* border: 1px solid #252525; */
+  width: 70px;
+  -webkit-box-shadow: -3px -1px 17px -14px rgb(255 255 255);
+  -moz-box-shadow: -3px -1px 17px -14px rgb(255 255 255);
+  box-shadow: -3px -1px 17px -14px rgb(255 255 255);
+}
+
+.circle-time {
+  width: 68px;
+  top: 300px;
+  position: absolute;
+  height: 58px;
+  border-radius: 40px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgb(255 255 255);
+  -moz-box-shadow: 0px 0px 15px 0px rgb(255 255 255);
+  box-shadow: 0px 0px 15px 0px rgb(255 255 255);
+}
+
+.wid-100 {
+  width: 100px;
+}
+
+.jus-cen {
+  justify-content: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.overlay-div-anim {
+  position: relative;
+  top: -58px;
+  height: 58px;
+  width: 68px;
+  /* border: 1px solid; */
+  border-radius: 50px;
+  box-shadow: 0px 0px 15px 0px rgb(255 255 255);
+  animation-name: example;
+  animation-duration: 1s;
+}
+
+
+
+@keyframes example {
+  /* from {width: 0px; height : 0px}
+  to {width: 68px; height : 58px} */
+  /* from {box-shadow: 0px 0px 0px 0px rgb(255 255 255);}
+  to {box-shadow: 0px 0px 15px 0px rgb(255 255 255);} */
+  0%   {box-shadow: 0px 0px 2px 0px rgb(255 255 255);width: 0px; height : 0px; top : -58px; left : 34px}
+  25%  {box-shadow: 0px 0px 15px 0px rgb(255 255 255);width: 68px; height : 58px; top : -58px; left : 0px}
+  /* 50%  {box-shadow: 0px 0px 0px 0px rgb(255 255 255);} */
+  75%  {box-shadow: 0px 0px 15px 0px rgb(255 255 255);width: 68px; height : 58px ; top : -58px; left : 0px}
+  100% {box-shadow: 0px 0px 2px 0px rgb(255 255 255);width: 0px; height : 0px; top : -29px; left : 34px}
+}
+
+body {
+  overflow:hidden;
+}
