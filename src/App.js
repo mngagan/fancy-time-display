@@ -49,7 +49,7 @@ function App() {
     )
   }
   let displayArray = [{ count: 2, top: top[0] }, { count: 9, top: top[1] }, { count: 5, top: top[2] }, { count: 9, top: top[3] }, { count: 5, top: top[4] }, { count: 9, top: top[5] }]
-  // displayArray = [displayArray[0]]
+  // displayArray = [displayArray[2]]
   return (
     <div className="App">
       {/* <header className="App-header">

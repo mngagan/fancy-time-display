@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background-color: #495057;
   min-height: 100vh;
   overflow: hidden;
 }
@@ -72,9 +73,12 @@ div {
 .bar-outer {
   /* border: 1px solid #252525; */
   width: 70px;
-  -webkit-box-shadow: -3px -1px 17px -14px rgb(255 255 255);
-  -moz-box-shadow: -3px -1px 17px -14px rgb(255 255 255);
-  box-shadow: -3px -1px 17px -14px rgb(255 255 255);
+  border-radius: 10px;
+  /* background-color: #282c34; */
+  background-color: black;
+  -webkit-box-shadow: -6px -4px 12px -5px rgb(255 255 255), 10px 12px 6px -2px #1d2124;;
+  -moz-box-shadow: -6px -4px 12px -5px rgb(255 255 255), 10px 12px 6px -2px #1d2124;;
+  box-shadow: -6px -4px 12px -5px rgb(255 255 255), 10px 12px 6px -2px #1d2124;;
 }
 
 .circle-time {
@@ -98,13 +102,24 @@ div {
 
 .text-bold {
   font-weight: bold;
+  color: #00ff3a;
+  animation-name: textBold;
+  animation-duration: 1s;
+}
+
+@keyframes textBold {
+  0% {color: white;}
+  25% {color: #28a745;}
+  75% {color: #28a745;}
+  100% {color: white;}
 }
 
 .overlay-div-anim {
   position: relative;
   top: -58px;
   height: 58px;
-  width: 68px;
+  width: 58px;
+  left : 5px;
   /* border: 1px solid; */
   border-radius: 50px;
   box-shadow: 0px 0px 15px 0px rgb(255 255 255);
@@ -115,15 +130,10 @@ div {
 
 
 @keyframes example {
-  /* from {width: 0px; height : 0px}
-  to {width: 68px; height : 58px} */
-  /* from {box-shadow: 0px 0px 0px 0px rgb(255 255 255);}
-  to {box-shadow: 0px 0px 15px 0px rgb(255 255 255);} */
-  0%   {box-shadow: 0px 0px 2px 0px rgb(255 255 255);width: 0px; height : 0px; top : -58px; left : 34px}
-  25%  {box-shadow: 0px 0px 15px 0px rgb(255 255 255);width: 68px; height : 58px; top : -58px; left : 0px}
-  /* 50%  {box-shadow: 0px 0px 0px 0px rgb(255 255 255);} */
-  75%  {box-shadow: 0px 0px 15px 0px rgb(255 255 255);width: 68px; height : 58px ; top : -58px; left : 0px}
-  100% {box-shadow: 0px 0px 2px 0px rgb(255 255 255);width: 0px; height : 0px; top : -29px; left : 34px}
+  0%   {box-shadow: 0px 0px 2px 0px rgb(255 255 255);width: 0px; height : 0px; top : -58px; left : 39px}
+  25%  {box-shadow: 0px 0px 15px 0px rgb(255 255 255);width: 58px; height : 58px; top : -58px; left : 5px}
+  75%  {box-shadow: 0px 0px 15px 0px rgb(255 255 255);width: 58px; height : 58px ; top : -58px; left : 5px}
+  100% {box-shadow: 0px 0px 2px 0px rgb(255 255 255);width: 0px; height : 0px; top : -29px; left : 39px}
 }
 
 body {
