@@ -52,17 +52,17 @@ function App() {
   // displayArray = [displayArray[2]]
   return (
     <div className="App">
-      {/* <header className="App-header">
-        Fancy Time
-      </header>
-      <div className="center-align">
+      {window.innerWidth < 800 && <header className="App-header">
+        This application is vest viewed in screen sizes larger than 800px
+      </header>}
+      {/* <div className="center-align">
         sec {new Date().getSeconds()}
       </div> */}
       <div style={{}} className="container">
         <div className="contaier">
-          <div className="contaier">
+          {/* <div className="contaier">
             <div className="contaier">
-              <div className="container">
+              <div className="container"> */}
                 <div className="row jus-cen">
                   {displayArray.map((val, index) => (
                     <div className="wid-100">
@@ -71,9 +71,9 @@ function App() {
                     </div>
                   ))}
                 </div>
-              </div>
+              {/* </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div >
